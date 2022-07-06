@@ -1,0 +1,156 @@
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 738px;
+  }
+
+  &__item {
+    width: calc((100% - 2 * 30px) / 3);
+
+    margin-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 30px) / 2);
+
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:not(:nth-child(3n)) {
+        margin-right: 30px;
+      }
+
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+
+    transform: translateY(100%);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .projects-list__item:hover &,
+    .projects-list__item:hover & {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.product-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  padding: 63px 24px;
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    padding: 91px 24px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: $primary-white-color;
+  }
+
+  .projects-list__item:hover &,
+  .projects-list__item:focus & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project {
+  padding: 20px 24px;
+  border-left: 1px solid $projects-list-border-color;
+  border-right: 1px solid $projects-list-border-color;
+  border-bottom: 1px solid $projects-list-border-color;
+
+  background-color: $primary-white-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-one {
+      padding-bottom: 56px;
+    }
+  }
+
+  &__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.88;
+
+    margin: 0;
+  }
+}

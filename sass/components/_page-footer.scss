@@ -1,0 +1,263 @@
+.page-footer {
+  display: flex;
+  background-color: $background-black-color;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+
+  &__container {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      width: 480px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.address__list {
+  // width: 231px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
+
+  &-item {
+    margin-bottom: 9px;
+
+    &:nth-last-child(-n + 1) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.address__link {
+  display: inline-block;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-map {
+    color: $primary-white-color;
+    text-decoration: none;
+
+    display: inline-block;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-social {
+  margin-left: 70px;
+  padding-top: 12px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 0 60px 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
+  &__cardset {
+    display: flex;
+    align-items: center;
+
+    margin-left: 0px;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: $primary-white-color;
+  }
+}
+
+.newsletter {
+  margin-left: 93px;
+  padding-top: 12px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-form {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+
+    color: $primary-white-color;
+    background-color: $background-black-color;
+    border: 1px solid $color-border-footer-input;
+    border-radius: 4px;
+
+    @media screen and (max-width: 1199px) {
+      width: 450px;
+      margin-bottom: 30px;
+    }
+
+    &:active,
+    &:focus-within,
+    & {
+      outline: none;
+    }
+  }
+}
+
+.footer-button {
+  margin-left: 12px;
+  min-width: 200px;
+  height: 50px;
+  display: flex;
+  border-radius: 4px;
+  padding: 10px 29px;
+
+  color: $primary-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  background-color: $accent-color;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,155 @@
+.employees {
+  background-color: $background-secondary-color;
+
+  text-align: center;
+
+  &-cardset {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+
+      width: 480px;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+
+      width: 768px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.employee-card {
+  background-color: $primary-white-color;
+
+  width: calc((100% - 3 * 30px) / 4);
+  padding-top: 0;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+
+    width: calc((100% - 60px) / 2);
+  }
+
+  &:not(:first-child) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+      height: 460px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 100%;
+      max-height: 374px;
+    }
+  }
+
+  &__title {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.19;
+
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+
+.social-cardset {
+  display: flex;
+  align-items: center;
+
+  margin-left: 32px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+.social-card {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background-color: $primary-white-color;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: $icon-grey-color;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-card__link:hover &,
+    .social-card__link:focus & {
+      fill: $primary-white-color;
+    }
+  }
+}
