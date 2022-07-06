@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  background: #ffffff;
+  position: relative;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+}
+
+.section {
+  padding: 94px 0 94px 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.top-wrap {
+  position: relative;
+  overflow: hidden;
+}

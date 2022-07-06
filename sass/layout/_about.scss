@@ -1,0 +1,48 @@
+.about {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    justify-content: center;
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.8);
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+    margin-bottom: 50px;
+  }
+}

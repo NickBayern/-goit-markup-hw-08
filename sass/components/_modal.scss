@@ -1,0 +1,210 @@
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: translatel;
+
+
+&__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    padding: 6px 6px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__close:hover,
+&__close:focus {
+    fill: var(--brend-color);
+}
+
+
+&__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+&__field {
+    margin-bottom: 10px;
+}
+
+&__label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--second-title-color);
+    margin-bottom: 4px;
+}
+
+&__input-wrap {
+    position: relative;
+    display: block;
+}
+
+&__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 30px;
+    outline: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__input:focus+.modal__icon {
+    fill: var(--brend-color);
+}
+
+&__input:focus,
+&__plachholder:focus {
+    border: 1px solid var(--brend-color);
+}
+
+&__plachholder {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    resize: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__checkbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+&__checkbox-label,
+&__checkbox-part {
+    line-height: 1.71;
+}
+
+&__checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+&__checkbox-part {
+    margin-left: 5px;
+    color: var(--brend-color);
+}
+
+&__checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-right: 7px;
+    justify-items: center;
+    outline: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__checkbox-text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+&__none-check {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+&__chek:checked+ &__checkbox-icon {
+    background-color: var(--brend-color);
+    background-image: url(../img/icon-chek-mark.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__btn {
+    text-align: center;
+}
+
+&__btn-send {
+    width: 200px;
+    height: 50px;
+    padding: 10px 55px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--brend-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+&__btn-send:hover,
+&__btn-send:focus {
+    background-color: #188ce8;
+}
+}
