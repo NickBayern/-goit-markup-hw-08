@@ -344,13 +344,13 @@ img {
       from(rgba(47, 48, 58, 0.4)),
       to(rgba(47, 48, 58, 0.4))
     ),
-    url(../images/hero_bg.jpg);
+    url(../images/basic.jpeg);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero_bg.jpg);
+    url(../images/hero_mobile_bg.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -366,13 +366,13 @@ img {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url(../images/hero_mobile_bg.jpg);
+      url(../images/hero_mobile_bg.jpeg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero_mobile_bg.jpg);
+      url(../images/hero_mobile_bg.jpeg);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -384,13 +384,13 @@ img {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url(../images/hero_tablet_bg.jpg);
+      url(../images/hero_tablet_bg.jpeg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero_tablet_bg.jpg);
+      url(../images/hero_tablet_bg.jpeg);
   }
 }
 .button {
@@ -508,19 +508,19 @@ img {
   background-color: #f5f4fa;
 }
 .feature__icon-antenna::before {
-  background-image: url(../images/icons/hw4/SVG/antenna.svg);
+  background-image: url(../images/hero-icon/antenna\ 1.svg);
   background-size: 65.32px 70px;
 }
 .feature__icon-clock::before {
-  background-image: url(../images/icons/hw4/SVG/clock.svg);
+  background-image: url(../images/hero-icon/clock\ 1.svg);
   background-size: 66.96px 70px;
 }
 .feature__icon-diagram::before {
-  background-image: url(../images/icons/hw4/SVG/diagram.svg);
+  background-image: url(../images/hero-icon/diagram\ 1.svg);
   background-size: 70px 70px;
 }
 .feature__icon-astronaut::before {
-  background-image: url(../images/icons/hw4/SVG/astronaut.svg);
+  background-image: url(../images/hero-icon/astronaut\ 1.svg);
   background-size: 70px;
 }
 @media screen and (min-width: 1200px) {
@@ -1614,7 +1614,7 @@ img {
 }
 .form-field__checkbox:checked + .form-field__icon-checked {
   border: transparent;
-  background-image: url(../images/icons/hw4/SVG/check.svg);
+  background-image: url(../images/icon\ check-2.svg);
   background-size: contain;
   background-origin: border-box;
 }
