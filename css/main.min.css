@@ -350,7 +350,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero_mobile_bg.jpeg);
+    url(../images/hero-bg-2-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -366,7 +366,7 @@ img {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url(../images/hero_mobile_bg.jpeg);
+      url(../images/hero-bg-2-2.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),

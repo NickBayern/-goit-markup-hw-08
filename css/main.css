@@ -397,13 +397,13 @@ img {
       from(rgba(47, 48, 58, 0.4)),
       to(rgba(47, 48, 58, 0.4))
     ),
-    url(../images/hero_bg.jpg);
+    url(../images/hero_bg\ .jpeg);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero_bg.jpg);
+    url(../images/hero_bg\ .jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -578,22 +578,22 @@ img {
   }
 
   .feature__icon-antenna::before {
-    background-image: url(../images/hero-icon/antenna\ 1.svg);
+    background-image: url(../images/icons/hw4/SVG/antenna.svg);
     background-size: 65.32px 70px;
   }
 
   .feature__icon-clock::before {
-    background-image: url(../images/hero-icon/clock\ 1.svg);
+    background-image: url(../images/icons/hw4/SVG/clock.svg);
     background-size: 66.96px 70px;
   }
 
   .feature__icon-diagram::before {
-    background-image: url(../images/hero-icon/diagram\ 1.svg);
+    background-image: url(../images/icons/hw4/SVG/diagram.svg);
     background-size: 70px 70px;
   }
 
   .feature__icon-astronaut::before {
-    background-image: url(../images/hero-icon/astronaut\ 1.svg);
+    background-image: url(../images/icons/hw4/SVG/astronaut.svg);
     background-size: 70px;
   }
 
@@ -1820,7 +1820,7 @@ img {
 
   .form-field__checkbox:checked + .form-field__icon-checked {
     border: transparent;
-    background-image: url(../images/icon\ check-2.svg);
+    background-image: url(../images/icons/hw4/SVG/check.svg);
     background-size: contain;
     background-origin: border-box;
   }
