@@ -344,7 +344,7 @@ img {
       from(rgba(47, 48, 58, 0.4)),
       to(rgba(47, 48, 58, 0.4))
     ),
-    url(../images/basic.jpeg);
+    url(../images/hero_bg.jpeg);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
