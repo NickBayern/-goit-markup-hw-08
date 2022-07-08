@@ -99,6 +99,8 @@ img {
   }
 }
 .page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
   background-color: #fff;
   border-bottom: 1px solid #ececec;
@@ -1683,9 +1685,11 @@ img {
   position: relative;
   width: 480px;
   height: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #fff;
-  margin: 0 auto;
-  overflow-y: scroll;
+  justify-content: space-between;
+  overflow-x: scroll;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -1728,6 +1732,7 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-right: 83px;
+  min-width: auto;
 }
 .mobile-menu-nav__list-item:not(:last-child) {
   margin-bottom: 32px;
@@ -1755,9 +1760,10 @@ img {
   color: #2196f3;
 }
 .mobile-site-nav {
-  display: block;
-  margin-bottom: 306px;
+  display: flex;
+  justify-content: space-between;
 }
+
 .mobile-contact-list {
   margin-bottom: 64px;
 }
