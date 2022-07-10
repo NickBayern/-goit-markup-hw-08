@@ -36,8 +36,8 @@ img {
   margin: 0;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (max-width: 1199px) {
   .section {
@@ -1834,7 +1834,7 @@ img {
 /* ----------------------------------- */
 .mobile-menu-close-button__icon:active,
 .menu-button__icon:active {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
