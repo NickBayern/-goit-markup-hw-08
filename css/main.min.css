@@ -105,7 +105,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .page-header {
-    padding: 32px 0;
+    padding: 32 px 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1923,5 +1923,8 @@ img {
   }
   .categories-list {
     width: 100%;
+  }
+  .page-header {
+    padding: 16px 0;
   }
 }
