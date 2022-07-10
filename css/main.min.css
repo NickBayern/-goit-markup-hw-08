@@ -36,8 +36,8 @@ img {
   margin: 0;
 }
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
   .section {
@@ -99,6 +99,8 @@ img {
   }
 }
 .page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
   background-color: #fff;
   border-bottom: 1px solid #ececec;
@@ -406,7 +408,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    width: 100%;
+    width: 480px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -1578,7 +1580,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .form-field__link {
-  margin-left: 6px;
+  margin-left: 5px;
   color: #2196f3;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
@@ -1609,8 +1611,8 @@ img {
 .form-field__icon-checked {
   display: inline-block;
   width: 16px;
+  margin-right: 6px;
   height: 15px;
-  margin-right: 7px;
   border: 2px solid #000;
   border-radius: 4px;
 }
@@ -1652,9 +1654,10 @@ img {
   margin-bottom: 20px;
 }
 .field-policy {
-  padding-left: 13px;
-  padding-right: 13px;
   margin-bottom: 30px;
+}
+.form-field__text {
+
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-backdrop {
@@ -1832,7 +1835,7 @@ img {
 /* ----------------------------------- */
 .mobile-menu-close-button__icon:active,
 .menu-button__icon:active {
-  fill: #2196f3;
+  fill: #2196F3;
 }
 
 @media screen and (max-width: 767px) {
@@ -1844,7 +1847,9 @@ img {
   .mobile-menu {
     width: 100%;
   }
-
+  .mobile-menu-nav {
+    padding: 50px 0 0 0;
+  }
   .mobile-menu-nav {
     height: 100%;
     display: flex;
