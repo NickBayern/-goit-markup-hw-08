@@ -406,7 +406,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    width: 480px;
+    width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -1844,9 +1844,7 @@ img {
   .mobile-menu {
     width: 100%;
   }
-  .mobile-menu-nav {
-    padding: 50px 0 0 0;
-  }
+
   .mobile-menu-nav {
     height: 100%;
     display: flex;
